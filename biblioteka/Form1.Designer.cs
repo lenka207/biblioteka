@@ -32,22 +32,25 @@
             this.username1 = new System.Windows.Forms.TextBox();
             this.password1 = new System.Windows.Forms.TextBox();
             this.potvrdi = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.izdavanje_knjiga = new System.Windows.Forms.Button();
+            this.vracanje_knjiga = new System.Windows.Forms.Button();
+            this.pisac = new System.Windows.Forms.Button();
+            this.knjiga = new System.Windows.Forms.Button();
+            this.prostorija = new System.Windows.Forms.Button();
+            this.polica = new System.Windows.Forms.Button();
+            this.bibliotekar = new System.Windows.Forms.Button();
+            this.citalac = new System.Windows.Forms.Button();
             this.izlaz = new System.Windows.Forms.Button();
+            this.izvestaj = new System.Windows.Forms.Button();
+            this.novi = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // username1
             // 
             this.username1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.username1.ForeColor = System.Drawing.SystemColors.Menu;
-            this.username1.Location = new System.Drawing.Point(86, 369);
+            this.username1.Location = new System.Drawing.Point(47, 365);
             this.username1.Name = "username1";
             this.username1.Size = new System.Drawing.Size(113, 22);
             this.username1.TabIndex = 0;
@@ -57,7 +60,7 @@
             // 
             this.password1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.password1.ForeColor = System.Drawing.SystemColors.Menu;
-            this.password1.Location = new System.Drawing.Point(86, 397);
+            this.password1.Location = new System.Drawing.Point(47, 393);
             this.password1.Name = "password1";
             this.password1.Size = new System.Drawing.Size(113, 22);
             this.password1.TabIndex = 1;
@@ -65,85 +68,85 @@
             // 
             // potvrdi
             // 
-            this.potvrdi.Location = new System.Drawing.Point(112, 425);
+            this.potvrdi.Location = new System.Drawing.Point(177, 394);
             this.potvrdi.Name = "potvrdi";
-            this.potvrdi.Size = new System.Drawing.Size(60, 26);
+            this.potvrdi.Size = new System.Drawing.Size(60, 23);
             this.potvrdi.TabIndex = 2;
             this.potvrdi.Text = "potvrdi";
             this.potvrdi.UseVisualStyleBackColor = true;
             this.potvrdi.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // izdavanje_knjiga
             // 
-            this.button2.Location = new System.Drawing.Point(56, 245);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.izdavanje_knjiga.Location = new System.Drawing.Point(34, 245);
+            this.izdavanje_knjiga.Name = "izdavanje_knjiga";
+            this.izdavanje_knjiga.Size = new System.Drawing.Size(126, 23);
+            this.izdavanje_knjiga.TabIndex = 3;
+            this.izdavanje_knjiga.Text = "izdavanje knjiga";
+            this.izdavanje_knjiga.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // vracanje_knjiga
             // 
-            this.button3.Location = new System.Drawing.Point(70, 121);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.vracanje_knjiga.Location = new System.Drawing.Point(47, 121);
+            this.vracanje_knjiga.Name = "vracanje_knjiga";
+            this.vracanje_knjiga.Size = new System.Drawing.Size(120, 23);
+            this.vracanje_knjiga.TabIndex = 4;
+            this.vracanje_knjiga.Text = "vracanje knjiga";
+            this.vracanje_knjiga.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // pisac
             // 
-            this.button4.Location = new System.Drawing.Point(538, 121);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(58, 36);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.pisac.Location = new System.Drawing.Point(532, 241);
+            this.pisac.Name = "pisac";
+            this.pisac.Size = new System.Drawing.Size(58, 23);
+            this.pisac.TabIndex = 5;
+            this.pisac.Text = "pisac";
+            this.pisac.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // knjiga
             // 
-            this.button5.Location = new System.Drawing.Point(828, 128);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.knjiga.Location = new System.Drawing.Point(828, 241);
+            this.knjiga.Name = "knjiga";
+            this.knjiga.Size = new System.Drawing.Size(75, 23);
+            this.knjiga.TabIndex = 6;
+            this.knjiga.Text = "knjiga";
+            this.knjiga.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // prostorija
             // 
-            this.button6.Location = new System.Drawing.Point(521, 245);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.prostorija.Location = new System.Drawing.Point(532, 121);
+            this.prostorija.Name = "prostorija";
+            this.prostorija.Size = new System.Drawing.Size(75, 23);
+            this.prostorija.TabIndex = 7;
+            this.prostorija.Text = "prostorija";
+            this.prostorija.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // polica
             // 
-            this.button7.Location = new System.Drawing.Point(828, 245);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
+            this.polica.Location = new System.Drawing.Point(828, 121);
+            this.polica.Name = "polica";
+            this.polica.Size = new System.Drawing.Size(75, 23);
+            this.polica.TabIndex = 8;
+            this.polica.Text = "polica";
+            this.polica.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // bibliotekar
             // 
-            this.button8.Location = new System.Drawing.Point(682, 326);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 9;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
+            this.bibliotekar.Location = new System.Drawing.Point(659, 325);
+            this.bibliotekar.Name = "bibliotekar";
+            this.bibliotekar.Size = new System.Drawing.Size(88, 23);
+            this.bibliotekar.TabIndex = 9;
+            this.bibliotekar.Text = "bibliotekar";
+            this.bibliotekar.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // citalac
             // 
-            this.button9.Location = new System.Drawing.Point(828, 317);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 10;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
+            this.citalac.Location = new System.Drawing.Point(828, 316);
+            this.citalac.Name = "citalac";
+            this.citalac.Size = new System.Drawing.Size(75, 23);
+            this.citalac.TabIndex = 10;
+            this.citalac.Text = "citalac";
+            this.citalac.UseVisualStyleBackColor = true;
             // 
             // izlaz
             // 
@@ -158,6 +161,35 @@
             this.izlaz.UseVisualStyleBackColor = false;
             this.izlaz.Click += new System.EventHandler(this.izlaz_Click);
             // 
+            // izvestaj
+            // 
+            this.izvestaj.Location = new System.Drawing.Point(177, 291);
+            this.izvestaj.Name = "izvestaj";
+            this.izvestaj.Size = new System.Drawing.Size(75, 23);
+            this.izvestaj.TabIndex = 12;
+            this.izvestaj.Text = "izvestaj";
+            this.izvestaj.UseVisualStyleBackColor = true;
+            // 
+            // novi
+            // 
+            this.novi.Location = new System.Drawing.Point(177, 365);
+            this.novi.Name = "novi";
+            this.novi.Size = new System.Drawing.Size(62, 23);
+            this.novi.TabIndex = 13;
+            this.novi.Text = "novi";
+            this.novi.UseVisualStyleBackColor = true;
+            this.novi.Click += new System.EventHandler(this.novi_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(918, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(52, 27);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "help";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -165,18 +197,22 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(982, 538);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.novi);
+            this.Controls.Add(this.izvestaj);
             this.Controls.Add(this.izlaz);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.citalac);
+            this.Controls.Add(this.bibliotekar);
+            this.Controls.Add(this.polica);
+            this.Controls.Add(this.prostorija);
+            this.Controls.Add(this.knjiga);
+            this.Controls.Add(this.pisac);
+            this.Controls.Add(this.vracanje_knjiga);
+            this.Controls.Add(this.izdavanje_knjiga);
             this.Controls.Add(this.potvrdi);
             this.Controls.Add(this.password1);
             this.Controls.Add(this.username1);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -190,15 +226,18 @@
         private System.Windows.Forms.TextBox username1;
         private System.Windows.Forms.TextBox password1;
         private System.Windows.Forms.Button potvrdi;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button izdavanje_knjiga;
+        private System.Windows.Forms.Button vracanje_knjiga;
+        private System.Windows.Forms.Button pisac;
+        private System.Windows.Forms.Button knjiga;
+        private System.Windows.Forms.Button prostorija;
+        private System.Windows.Forms.Button polica;
+        private System.Windows.Forms.Button bibliotekar;
+        private System.Windows.Forms.Button citalac;
         private System.Windows.Forms.Button izlaz;
+        private System.Windows.Forms.Button izvestaj;
+        private System.Windows.Forms.Button novi;
+        private System.Windows.Forms.Button button1;
     }
 }
 

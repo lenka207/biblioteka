@@ -59,15 +59,5 @@ namespace biblioteka.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
-        /// </summary>
-        internal static byte[] images {
-            get {
-                object obj = ResourceManager.GetObject("images", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
     }
 }

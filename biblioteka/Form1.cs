@@ -14,14 +14,16 @@ namespace biblioteka
 {
     public partial class Form1 : Form
     {
-        public string sifra = "123";
-        public string ime = "ja";
-        public bool administrator = false;
+
+        private List<Librarian> librarians;
         public Form1()
         {
             InitializeComponent();
-            SetCustomCursor();
-
+            //SetCustomCursor();
+            librarians = new List<Librarian>
+            {
+                new Librarian { Username = "admin", Password = "admin123" }
+            };
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -43,23 +45,7 @@ namespace biblioteka
             this.Cursor = customCursor;
             */
         }
-        private void SetCustomCursor()
-        {
-            try
-            {
-                // Učitaj sliku kursora iz resursa
-                using (var stream = new MemoryStream(Properties.Resources.images))
-                {
-                    Cursor customCursor = new Cursor(stream);
-                    // Postavi kursor za celu formu
-                    this.Cursor = customCursor;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Failed to set custom cursor: " + ex.Message);
-            }
-        }
+        
         private void username2(object sender, EventArgs e)
         {
             string username = username1.Text;
@@ -72,23 +58,56 @@ namespace biblioteka
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (username1.Text == ime)
+            
+            string username = username1.Text;
+            string password = password1.Text;
+
+            Librarian librarian = librarians.Find(l => l.Username == username && l.Password == password);
+            if (librarian != null)
             {
-                if (password1.Text == sifra)
-                {
-                    administrator = true;
-                    MessageBox.Show("Tacno");
-                }
+                MessageBox.Show("Uspesno logovanje");
+                // Ovde možete otvoriti glavnu formu aplikacije.
             }
-            if (administrator == false)
+            else
             {
-                MessageBox.Show("Netacno ime ili sifra");
+                MessageBox.Show("netacan username ili password.");
             }
         }
 
         private void izlaz_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void novi_Click(object sender, EventArgs e)
+        {
+            string username = username1.Text;
+            string password = password1.Text;
+
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("Username ili password ne mogu biti prazni.");
+                return;
+            }
+
+            Librarian newLibrarian = new Librarian { Username = username, Password = password };
+            librarians.Add(newLibrarian);
+
+            MessageBox.Show($"dodat je novi bibliotekar.\nUsername: {username}");
+
+            // Poništavanje unosa
+            username1.Text = "";
+            password1.Text = "";
+        }
+        public class Librarian
+        {
+            public string Username { get; set; }
+            public string Password { get; set; }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("username je admin, a password je admin123");
         }
     }
 }
